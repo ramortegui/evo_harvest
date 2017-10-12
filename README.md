@@ -1,5 +1,7 @@
 # EvoHarvest
 
+Sample GraphQL API based on harvest app raw structure.
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
