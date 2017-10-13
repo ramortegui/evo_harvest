@@ -5,5 +5,7 @@ defmodule EvoHarvestWeb.Schema do
   end
 
   object :company do
+    field :id, :id
+    field :name, :string
   end
 end
