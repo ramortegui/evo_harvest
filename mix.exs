@@ -20,7 +20,7 @@ defmodule EvoHarvest.Mixfile do
   def application do
     [
       mod: {EvoHarvest.Application, []},
-      extra_applications: [:logger, :runtime_tools, :absinthe]
+      extra_applications: [:logger, :runtime_tools ]
     ]
   end
 
@@ -41,7 +41,10 @@ defmodule EvoHarvest.Mixfile do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
-      {:absinthe, "~> 1.3.2" }
+      {:absinthe, "~> 1.4.0-beta or ~> 1.4.0-rc or ~> 1.4.0", override: true},
+      {:absinthe_plug, "~> 1.3.0-beta or ~> 1.4.0-rc or ~> 1.4.0" },
+      {:absinthe_phoenix, "~> 1.4.0-beta or ~> 1.4.0-rc or ~> 1.4.0" },
+      {:absinthe_relay, "~> 1.4.0-beta or ~> 1.4.0-rc or ~> 1.4.0 or ~> 1.3.0" }
     ]
   end
 
